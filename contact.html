@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CR7 Sports Contact Us</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./contact.css">
+
+        <!-- logo -->
+     <link rel="shortcut icon" href="./images/Logo.icorn.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logocr7">
+                <h2>CR7 <span>SPORTS</span></h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home Page</a></li>
+                <li><a href="./shop.html" class="active">Shoping Page</a></li>
+                <li><a href="#Home">Home</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <i id="menubtn" class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= Side Bar ================= -->
+
+    <nav class="navbar" id="Sidenavbarbutton">
+        <i id="xcancle" class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <ul class="nav-links" id="nav-items">
+            <div class="logocr7">
+                <h2 class="sidehead">CR7 </h2>
+                <span>
+                    <h2 class="sidehead2" style="color: red;">SPORTS</h2>
+                </span>
+            </div>
+            <div class="icons" id="sideicorn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+                <li><a href="./index.html" class="active">Home Page</a></li>
+                <li><a href="./shop.html" class="active">Shoping Page</a></li>
+                <li><a href="#Home">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="contact-page" id="Home">
+
+        <!-- Background Overlay -->
+        <div class="background-overlay"></div>
+
+        <div class="contact-container">
+
+            <!-- Left Content -->
+            <section class="contact-info">
+
+                <div class="logo">
+                    <span>CR</span><strong>7</strong>
+                </div>
+
+                <p class="small-title">GET IN TOUCH</p>
+
+                <h1>
+                    Let's Start a
+                    <span>Conversation.</span>
+                </h1>
+
+                <p class="description">
+                    Have a question, project or message?
+                    Fill out the form and our team will get
+                    back to you as soon as possible.
+                </p>
+
+                <div class="info-line">
+                    <div class="icon">✉</div>
+                    <div>
+                        <small>Email</small>
+                        <p>Vignesh.techdev02@Gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-line">
+                    <div class="icon">☎</div>
+                    <div>
+                        <small>Phone</small>
+                        <p>+80566 42269</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- Contact Form -->
+            <section class="contact-card">
+
+                <div class="form-header">
+                    <p>CONTACT FORM</p>
+                    <h2>Send Us a Message</h2>
+                    <span>We would love to hear from you.</span>
+                </div>
+
+                <form id="contactForm" novalidate>
+
+                    <div class="input-row">
+
+                        <!-- First Name -->
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+
+                            <input type="text" id="firstName" placeholder="Enter first name" autocomplete="given-name">
+
+                            <small class="error" id="firstNameError"></small>
+                        </div>
+
+
+                        <!-- Last Name -->
+                        <div class="input-group">
+                            <label for="lastName">Last Name</label>
+
+                            <input type="text" id="lastName" placeholder="Enter last name" autocomplete="family-name">
+
+                            <small class="error" id="lastNameError"></small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="input-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input type="email" id="email" placeholder="Enter your email address" autocomplete="email">
+
+                        <small class="error" id="emailError"></small>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="input-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <div class="phone-wrapper">
+                            <span>+91</span>
+
+                            <input type="tel" id="phone" maxlength="10" inputmode="numeric"
+                                placeholder="10 digit phone number" autocomplete="tel">
+                        </div>
+
+                        <small class="error" id="phoneError"></small>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="input-group">
+
+                        <label for="message">Your Message</label>
+
+                        <textarea id="message" placeholder="Write your message here..."></textarea>
+
+                        <small class="error" id="messageError"></small>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="send-btn">
+
+                        <span>Send Message</span>
+
+                        <span class="arrow">→</span>
+
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Success Popup -->
+    <div class="success-popup" id="successPopup">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <div>
+            <strong>Message Sent Successfully!</strong>
+            <p>Thank you for contacting us.</p>
+        </div>
+
+    </div>
+
+
+    <script src="./contact.js"></script>
+
+</body>
+
+</html>

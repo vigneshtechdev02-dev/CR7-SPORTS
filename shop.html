@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CR7 SPORTS / PRODUCT</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./shop.css">
+
+        <!-- logo -->
+     <link rel="shortcut icon" href="./images/Logo.icorn.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>CR7 <span>SPORTS</span></h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home Page</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Category">Category</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <i id="menubtn" class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= Side Bar ================= -->
+
+    <nav class="navbar" id="Sidenavbarbutton">
+        <i id="xcancle" class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <ul class="nav-links" id="nav-items">
+            <div class="logo">
+                <h2 class="sidehead">CR7 </h2>
+                <span>
+                    <h2 class="sidehead2" style="color: red;">SPORTS</h2>
+                </span>
+            </div>
+            <div class="icons" id="sideicorn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <li><a href="./index.html" class="active">Home Page</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Category">Category</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Silder -->
+
+    <section class="hero-slider">
+
+        <div class="slider-container">
+
+            <!-- Slides -->
+            <div class="slides">
+
+                <div class="slide active">
+                    <img src="./images/slide-1.png" alt="Fashion Banner">
+                </div>
+
+                <div class="slide">
+                    <img src="./images/slide-2.png" alt="Fashion Collection">
+                </div>
+
+                <div class="slide">
+                    <img src="./images/slide -3.png" alt="Fashion Style">
+                </div>
+
+                <div class="slide">
+                    <img src="./images/slide -4.png" alt="Fashion Store">
+                </div>
+
+            </div>
+
+
+            <!-- Left Arrow -->
+            <button class="arrow arrow-left" id="prevBtn">
+                <span></span>
+            </button>
+
+
+            <!-- Right Arrow -->
+            <button class="arrow arrow-right" id="nextBtn">
+                <span></span>
+            </button>
+
+        </div>
+
+
+
+        <!-- MAIN CONTAINER -->
+        <main class="shop-container" id="Category">
+
+            <!-- MOBILE FILTER BUTTON -->
+            <button class="mobile-filter-btn" id="mobileFilterBtn">
+                <i class="ri-equalizer-2-line"></i>
+                Filters
+            </button>
+
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar" id="sidebar">
+
+                <div class="sidebar-header">
+                    <div>
+                        <span class="small-label">SHOP</span>
+                        <h2>Filters</h2>
+                    </div>
+
+                    <button class="close-sidebar" id="closeSidebar">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+
+
+                <!-- OCCASION -->
+                <div class="filter-section">
+
+                    <h3>Occasion</h3>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Boots" data-filter="occasion">
+                        <span class="custom-check"></span>
+                        <span>Boots</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Jersey" data-filter="occasion">
+                        <span class="custom-check"></span>
+                        <span>Jersey</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Others" data-filter="occasion">
+                        <span class="custom-check"></span>
+                        <span>Others</span>
+                    </label>
+
+                </div>
+
+
+                <!-- COLORS -->
+                <div class="filter-section">
+
+                    <h3>Colors</h3>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Red" data-filter="color">
+                        <span class="custom-check"></span>
+                        <span>Red</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Purple" data-filter="color">
+                        <span class="custom-check"></span>
+                        <span>Purple</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Pink" data-filter="color">
+                        <span class="custom-check"></span>
+                        <span>Pink</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Blue" data-filter="color">
+                        <span class="custom-check"></span>
+                        <span>Blue</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Yellow" data-filter="color">
+                        <span class="custom-check"></span>
+                        <span>Yellow</span>
+                    </label>
+
+                </div>
+
+
+                <!-- ARRIVALS -->
+                <div class="filter-section">
+
+                    <h3>Arrivals</h3>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="New" data-filter="arrival">
+                        <span class="custom-check"></span>
+                        <span>New</span>
+                    </label>
+
+                    <label class="check-row">
+                        <input type="checkbox" value="Old" data-filter="arrival">
+                        <span class="custom-check"></span>
+                        <span>Old</span>
+                    </label>
+
+                </div>
+
+
+                <button class="clear-btn" id="clearFilters">
+                    <i class="ri-refresh-line"></i>
+                    Clear All Filters
+                </button>
+
+            </aside>
+
+
+            <!-- DARK OVERLAY FOR MOBILE -->
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+            <!-- PRODUCTS AREA -->
+            <section class="products-area">
+
+                <!-- SEARCH -->
+                <div class="search-wrapper">
+
+                    <i class="ri-search-line search-icon"></i>
+
+                    <input type="text" id="searchInput" placeholder="Search products..." autocomplete="off">
+
+                    <button id="clearSearch" class="clear-search">
+                        <i class="ri-close-circle-fill"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- PRODUCTS HEADER -->
+                <div class="products-heading">
+
+                    <div>
+                        <span class="collection-label">NEW COLLECTION</span>
+                        <h2>Explore Our Collection</h2>
+                    </div>
+
+                    <div class="result-count">
+                        <span id="productCount">9</span> Products
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVE FILTERS -->
+                <div class="active-filters" id="activeFilters"></div>
+
+
+                <!-- PRODUCT GRID -->
+                <div class="product-grid" id="productGrid">
+
+
+                    <!-- PRODUCT 1 -->
+                    <article class="product-card" data-name="Black Special Edition Boot" data-occasion="Boots"
+                        data-color="Red" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">NEW</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-1.png" alt="Black Boots">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Black Boots</span>
+
+                            <h3>Black Special Edition Boot</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹15,999 <del style="color: red;">26,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+                    <article class="product-card" data-name="Purple Special Edition Boot" data-occasion="Boots"
+                        data-color="Purple" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">NEW</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-2.png" alt="Summer Green">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Purple Boot</span>
+
+                            <h3>Purple Special Edition Boot</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹14,499 <del style="color: red;">22,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 3 -->
+                    <article class="product-card" data-name="Pink Special Edition Boot" data-occasion="Boots"
+                        data-color="Pink" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge sale">SALE</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-4.png" alt="Party Floral Shirt">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Pink Boot</span>
+
+                            <h3>Pink Special Edition Boot</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹27,999 <del style="color: red;">38,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 4 -->
+                    <article class="product-card" data-name="Adidas Belgian Home Jersey" data-occasion="Jersey"
+                        data-color="Red" data-arrival="Old">
+
+                        <div class="product-image">
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-3.png" alt="Floral Summer Shirt">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Belgian Jersey</span>
+
+                            <h3>Adidas Belgian Home Jersey</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹4,999 <del style="color: red;">6,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 5 -->
+                    <article class="product-card" data-name="Nike Brazil Home Jersey" data-occasion="Jersey"
+                        data-color="Yellow" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">NEW</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-5.png" alt="Beach Shirt">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Brazil Jersey</span>
+
+                            <h3>Nike Brazil Home Jersey</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹4,999 <del style="color: red;">6,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 6 -->
+                    <article class="product-card" data-name="Puma Portugal Home Jersey" data-occasion="Jersey"
+                        data-color="Red" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">HOT</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-6.png" alt="Shirt Party Red">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Portugal Jersey</span>
+
+                            <h3>Puma Portugal Home Jersey</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹6,999 <del style="color: red;">8,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 7 -->
+                    <article class="product-card" data-name="Adidas Argentina Home Jersey" data-occasion="Jersey"
+                        data-color="Blue" data-arrival="Old">
+
+                        <div class="product-image">
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-7.png" alt="Party Floral Shirt">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Argentina Jersey</span>
+
+                            <h3>Adidas Argentina Home Jersey</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹3,599 <del style="color: red;">5,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 8 -->
+                    <article class="product-card" data-name="Fifa Worldcup 2026 Football" data-occasion="Others"
+                        data-color="Blue" data-arrival="Old">
+
+                        <div class="product-image">
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-8.png" alt="Shirt Party Red">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Fifa Football</span>
+
+                            <h3>Fifa Worldcup 2026 Football</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹7,599 <del style="color: red;">9,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 9 -->
+                    <article class="product-card" data-name="Nike Portugal Track Jacket" data-occasion="Others"
+                        data-color="Blue" data-arrival="New">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">NEW</span>
+
+                            <button class="heart-btn">
+                                <i class="ri-heart-line"></i>
+                            </button>
+
+                            <img src="./images/pro-9.png" alt="Floral Summer Shirt">
+
+                            <div class="quick-view">
+                                <button>Quick View</button>
+                            </div>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="category">Track Jacket</span>
+
+                            <h3>Nike Portugal Track Jacket</h3>
+
+                            <div class="product-bottom">
+                                <span class="price">₹8,499 <del style="color: red;">12,000</del></span>
+
+                                <button class="add-btn">
+                                    <i class="ri-add-line"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+                <div class="no-results" id="noResults">
+
+                    <div class="no-results-icon">
+                        <i class="ri-search-2-line"></i>
+                    </div>
+
+                    <h3>No Products Found</h3>
+
+                    <p>
+                        Try another product name or remove some filters.
+                    </p>
+
+                    <button id="resetNoResults">
+                        Reset Filters
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- MOBILE BOTTOM BAR -->
+        <div class="mobile-bottom-bar">
+
+            <button id="mobileFilterBottom">
+                <i class="ri-equalizer-line"></i>
+                <span>Filters</span>
+            </button>
+
+            <button id="mobileSearchBottom">
+                <i class="ri-search-line"></i>
+                <span>Search</span>
+            </button>
+
+            <button>
+                <i class="ri-shopping-bag-line"></i>
+                <span>Bag</span>
+            </button>
+
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <div class="footer-container" id="About">
+
+                <div class="footer-box">
+
+                    <h2>CR7 <span style="color: red;">SPORTS</span></h2>
+
+                    <p>
+                        Premium sports gear inspired by greatness.
+                    </p>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="./index.html">Home Page</a>
+                    <a href="#Category">Categories</a>
+                    <a href="#">About</a>
+                    <a href="./contact.html">Contact</a>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Customer Service</h3>
+
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+
+                </div>
+
+                <div class="footer-box">
+
+                    <h3>Follow Us</h3>
+
+                    <div class="social">
+
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+                © 2026 CR7 Sports. All Rights Reserved.
+            </p>
+
+        </footer>
+
+
+
+        <script src="./shop.js"></script>
+
+</body>
+
+</html>

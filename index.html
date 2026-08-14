@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 Sports</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- logo -->
+     <link rel="shortcut icon" href="./images/Logo.icorn.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>CR7 <span>SPORTS</span></h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="./shop.html" class="active">Shoping Page</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Category">Category</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <i id="menubtn" class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= Side Bar ================= -->
+
+    <nav class="navbar" id="sidebar">
+        <i id="xcancle" class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <i class="fa-solid fa-x" style="color: rgb(0, 0, 0);"></i>
+        <ul class="nav-links" id="nav-items">
+            <div class="logo">
+                <h2 class="sidehead">CR7 </h2>
+                <span>
+                    <h2 class="sidehead2" style="color: red;">SPORTS</h2>
+                </span>
+            </div>
+            <div class="icons" id="sideicorn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+            <li><a href="./shop.html" class="active">Shoping Page</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Category">Category</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- popup message -->
+     <div class="popup_container" id="popup_container">
+     <div class="popup_msg">
+        <h3>Sign Up And <span class="popup_offer">GET 30% OFF</span> For Your First Order <i id="popup_btn" class="fa-solid fa-x" style="color: rgb(252, 252, 252);"></i></h3>
+        
+     </div>
+     </div>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h5>PERFORMANCE. STYLE. LEGACY.</h5>
+
+            <h1>Shop Premium <br> Sports Collection</h1>
+
+            <p>
+                High-performance gear for champions.
+                Inspired by Cristiano Ronaldo.
+            </p>
+
+            <button><a href="./shop.html">Shop Now</a></button>
+        </div>
+
+
+    </section>
+
+    <!-- ================= Scrolling Bar ================= -->
+    <div class="scroll_container">
+        <div class="scroll_box">
+            <div class="scroll_card"><img src="./images/ad-1.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-2.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-3.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-4.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-5.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-6.png" alt=""></div>
+        </div>
+
+        <div aria-hidden class="scroll_box">
+            <div class="scroll_card"><img src="./images/ad-7.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-8.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-9.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-1.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-3.png" alt=""></div>
+            <div class="scroll_card"><img src="./images/ad-5.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- ================= CATEGORY ================= -->
+
+    <section class="category" id="Category">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="./images/d-purple boot.jpeg" alt="">
+                <h3 style="margin-top: 20px;">Football Boots</h3>
+                <span class="price">₹8,499 <del style="color: red;">12,000</del></span>
+                <button class="add-btn">
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+
+            <div class="category-card">
+                <img src="./images/d-tshir.jpeg" alt="">
+                <h3 style="margin-top: 15px;">Jerseys</h3>
+                <span class="price">₹6,499 <del style="color: red;">9,000</del></span>
+                <button class="add-btn">
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+
+            <div class="category-card">
+                <img src="./images/d-jocket.jpeg" alt="">
+                <h3>Training Wear</h3>
+                <span class="price">₹7,499 <del style="color: red;">11,000</del></span>
+                <button class="add-btn">
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+
+            <div class="category-card">
+                <img src="./images/d-bag.jpeg" alt="">
+                <h3 style="margin-top: 20px;">Accessories</h3>
+                <span class="price">₹4,499 <del style="color: red;">8,000</del></span>
+                <button class="add-btn">
+                    <i class="ri-add-line"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products" id="Products">
+
+        <div class="title">
+            <h2>Featured Products</h2>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+
+            <div class="product-card">
+
+                <i class="fa-regular fa-heart heart"></i>
+
+                <img src="./images/d-gold boot.jpeg">
+
+                <h3>CR7 Gold Special Edition Boot</h3>
+
+                <h4>₹26,499 <del style="color: red;">31,000</del></h4> 
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <button class="cart-btn">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="product-card">
+
+                <i class="fa-regular fa-heart heart"></i>
+
+                <img src="./images/d-pink boot.jpeg">
+
+                <h3>CR7 Pink Special Edition Boot</h3>
+
+                <h4>₹20,499 <del style="color: red;">26,000</del></h4> 
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <button class="cart-btn">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="product-card">
+
+                <i class="fa-regular fa-heart heart"></i>
+
+                <img src="./images/d-red boot.jpeg">
+
+                <h3>CR7 Red Special Edition Boot</h3>
+
+                <h4>₹14,499 <del style="color: red;">21,000</del></h4> 
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <button class="cart-btn">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="product-card">
+
+                <i class="fa-regular fa-heart heart"></i>
+
+                <img src="./images/d-purple boot.jpeg">
+
+                <h3>CR7 Purple Edition Boot</h3>
+
+                <h4>₹17,499 <del style="color: red;">22,000</del></h4> 
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+                <button class="cart-btn">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BANNER ================= -->
+
+    <section class="banner">
+
+        <div class="banner-text">
+            <h4>NEW ARRIVALS</h4>
+            <h2>Gear Up For Greatness</h2>
+            <p>Explore the latest CR7 collection.</p>
+
+            <button><a href="./shop.html">Shop Now</a></button>
+        </div>
+
+        <img src="./images/banner-2.1.png">
+
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="testimonial">
+
+        <div class="testimonial__container">
+
+            <div class="testimonial__title">
+                <h2>What Our Costomers Say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <!-- Testimonial 1 -->
+
+                <div class="testimonial-card">
+
+                    <i class="ri-double-quotes-l quote"></i>
+
+                    <p class="review">
+                        Excellent quality football boots, jerseys, balls, jackets, and accessories. Great variety,
+                        stylish designs, reliable quality, and a smooth overall shopping experience.
+                    </p>
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+
+                        <div class="user-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>USA</span>
+                        </div>
+
+                        <div class="rating">
+                            ★★★★★ <span>5.0</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 2 -->
+
+                <div class="testimonial-card">
+
+                    <i class="ri-double-quotes-l quote"></i>
+
+                    <p class="review">
+                        CR7 Sports offers impressive football gear with quality boots, team jerseys, durable balls, and
+                        accessories. Highly recommended for football enthusiasts.
+                    </p>
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+
+                        <div class="user-info">
+                            <h4>James Smith</h4>
+                            <span>UK</span>
+                        </div>
+
+                        <div class="rating">
+                            ★★★★★ <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Testimonial 3 -->
+
+                <div class="testimonial-card">
+
+                    <i class="ri-double-quotes-l quote"></i>
+
+                    <p class="review">
+                        Very satisfied with my purchase from CR7 Sports. The boots feel comfortable, jerseys look
+                        premium, and overall product quality is excellent.
+                    </p>
+
+                    <div class="user">
+
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+
+                        <div class="user-info">
+                            <h4>Emily Davis</h4>
+                            <span>Australia</span>
+                        </div>
+
+                        <div class="rating">
+                            ★★★★★ <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div>
+            <h2>Stay In The Game</h2>
+            <p>Subscribe and get 10% off your first order.</p>
+        </div>
+
+        <form>
+
+            <input type="email" placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container" id="About">
+
+            <div class="footer-box">
+
+                <h2>CR7 <span style="color: red;">SPORTS</span></h2>
+
+                <p>
+                    Premium sports gear inspired by greatness.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="./shop.html">Shoping Page</a>
+                <a href="#Category">Categories</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Service</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social">
+
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 CR7 Sports. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
