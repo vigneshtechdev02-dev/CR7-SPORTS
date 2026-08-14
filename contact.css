@@ -109,7 +109,7 @@ header {
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     z-index: 1000;
-    left: -60%;
+    left: -70%;
     transition: all;
     transition-duration: 1.5s;
 }

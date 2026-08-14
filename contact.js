@@ -10,7 +10,7 @@ menu.addEventListener("click", function () {
 
 canclebar.addEventListener("click", function () {
     var sidebar = document.getElementById("Sidenavbarbutton")
-    sidebar.style.left = "-60%"
+    sidebar.style.left = "-70%"
 })
 
 /* =====================================

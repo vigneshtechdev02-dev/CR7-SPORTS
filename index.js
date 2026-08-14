@@ -9,7 +9,7 @@ menu.addEventListener("click", function () {
 
 canclebar.addEventListener("click", function () {
     var sidebar = document.getElementById("sidebar")
-    sidebar.style.left = "-60%"
+    sidebar.style.left = "-70%"
 })
 
 // Popup Message
